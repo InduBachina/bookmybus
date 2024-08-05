@@ -9,30 +9,54 @@
 <body>
     <header>
         <div class="logo">
-            <img src="logo.png" alt="Logo">
-            <div class="site-name">Book My Bus</div>
+            <a href="index.html">
+                <img src="logo.png" alt="Logo"></a>
+                <div class="site-name">Book My Bus</div>
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">About</a></li>
-                <li><a href="index.html">Help</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="help.html">Help</a></li>
                 <li><a href="login.html">Login</a></li>
             </ul>
         </nav>
     </header>
-    
+
     <main>
-        <div class="form-container">
-            <h2>Login</h2>
-            <form action="login.php" method="post">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-                <button type="submit">Login</button>
+        <div class="login-container">
+            <form action="login.php" method="post" class="login-form">
+                <h2>WELCOME BACK</h2>
+                <div class="form-group">
+                    <label for="username">Email/Username</label>
+                    <input type="text" id="username" name="username" required placeholder="Enter your username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required placeholder="Enter your password">
+                </div>
+                <div class="form-group">
+                    <button type="submit">Login</button>
+                </div>
+                <p><a href="forgotPassword.html">forgot password</a></p>
+                <p>New to book my bus? <a href="signup.html">Sign up</a></p>
             </form>
-            <p>Don't have an account? <a href="signup.html">Sign up</a></p>
         </div>
     </main>
+
+    <footer>
+        <div class="footer-logo">
+            <a href="index.html">
+                <img src="logo.png" alt="Logo"></a>
+                <div class="site-name">Book My Bus</div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>|
+                <li><a href="help.html">Help</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
